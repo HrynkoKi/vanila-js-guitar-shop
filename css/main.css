@@ -1,0 +1,95 @@
+/* Variable */
+:root {
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-black-8: rgba(0, 0, 0, 0.8);
+
+  --color-light-grey: #e3e3e3;
+
+  --color-accent: #0c3cda;
+  --color-unaccented: #b4adad;
+
+  --color-active: #e99931;
+  --color-error-light: rgb(204, 106, 106);
+  --color-error-dark: rgb(173, 81, 81);
+
+  /* Spacing */
+  --spacing-small: 10px;
+  --spacing-medium: 15px;
+  --spacing-large: 30px;
+
+  /* Font Family */
+  --f-f-montserrat: "Montserrat", sans-serif;
+  --f-f-roboto: "Roboto", sans-serif;
+
+  --f-s-main: 1.6rem;
+  --f-s-18: 1.8rem;
+  --f-s-21: 2.1rem;
+  --f-s-24: 2.4rem;
+  --f-s-28: 2.8rem;
+  --f-s-32: 3.2rem;
+
+  --f-w-bold: 700;
+
+  /* Other */
+  --box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  --border-radius: 6px;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-black-8);
+  border-radius: var(--border-radius);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-light-grey);
+}
+
+/* General Settings */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--f-s-main);
+  font-family: var(--f-f-roboto);
+  line-height: 1.7;
+  background: linear-gradient(135deg, rgb(96, 176, 76) 10%, rgb(101, 124, 97));
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
